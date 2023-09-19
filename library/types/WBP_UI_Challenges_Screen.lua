@@ -1,0 +1,76 @@
+---@meta
+
+---@class UWBP_UI_Challenges_Screen_C : USBZMainMenuChallengesWidget
+---@field UberGraphFrame FPointerToUberGraphFrame
+---@field Background UImage
+---@field Button_All UWBP_UI_MainMenu_ScalableButton_C
+---@field Button_Completed UWBP_UI_MainMenu_ScalableButton_C
+---@field Button_InProgress UWBP_UI_MainMenu_ScalableButton_C
+---@field Button_Locked UWBP_UI_MainMenu_ScalableButton_C
+---@field Button_TabBackward UWBP_UI_Menu_ActionInputButtonLight_C
+---@field Button_TabForward UWBP_UI_Menu_ActionInputButtonLight_C
+---@field Button_Unavailable UWBP_UI_MainMenu_ScalableButton_C
+---@field CanvasPanel_Widget UCanvasPanel
+---@field Image UImage
+---@field Image_1 UImage
+---@field Image_306 UImage
+---@field Image_tittle UImage
+---@field TextBlock_CategoryName UTextBlock
+---@field TextBlock_PageNumber UTextBlock
+---@field TutorialPopup_Button UWBP_UI_Menu_ActionInputButton_C
+---@field ActiveButton USBZMenuButton
+---@field ['Force Single Filter Status or None'] boolean
+---@field PageTimerHandle FTimerHandle
+UWBP_UI_Challenges_Screen_C = {}
+
+---@param NewParam EChallengeStatusEnum
+function UWBP_UI_Challenges_Screen_C:GetCurrentStatusFilter(NewParam) end
+function UWBP_UI_Challenges_Screen_C:UpdateControlsReference() end
+function UWBP_UI_Challenges_Screen_C:UpdateFilterButtons() end
+---@param Button USBZMenuButton
+---@param bIsEnabled boolean
+function UWBP_UI_Challenges_Screen_C:BndEvt__WBP_UI_Challenges_Screen_Button_General_K2Node_ComponentBoundEvent_5_OnMenuButtonStateChanged__DelegateSignature(Button, bIsEnabled) end
+---@param Button USBZMenuButton
+---@param bIsEnabled boolean
+function UWBP_UI_Challenges_Screen_C:BndEvt__WBP_UI_Challenges_Screen_Button_Heist_K2Node_ComponentBoundEvent_6_OnMenuButtonStateChanged__DelegateSignature(Button, bIsEnabled) end
+---@param Button USBZMenuButton
+---@param bIsEnabled boolean
+function UWBP_UI_Challenges_Screen_C:BndEvt__WBP_UI_Challenges_Screen_Button_Meta_K2Node_ComponentBoundEvent_7_OnMenuButtonStateChanged__DelegateSignature(Button, bIsEnabled) end
+---@param Button USBZMenuButton
+---@param bIsEnabled boolean
+function UWBP_UI_Challenges_Screen_C:BndEvt__WBP_UI_Challenges_Screen_Button_All_K2Node_ComponentBoundEvent_2_OnMenuButtonStateChanged__DelegateSignature(Button, bIsEnabled) end
+---@param Button USBZMenuButton
+function UWBP_UI_Challenges_Screen_C:BndEvt__WBP_UI_Challenges_Screen_Button_Meta_K2Node_ComponentBoundEvent_4_OnMenuButtonSelected__DelegateSignature(Button) end
+function UWBP_UI_Challenges_Screen_C:OnLostStackFocused() end
+---@param ActionName FName
+function UWBP_UI_Challenges_Screen_C:OnControlsReferenceClicked(ActionName) end
+---@param Button USBZMenuButton
+function UWBP_UI_Challenges_Screen_C:BndEvt__WBP_UI_Challenges_Screen_Button_Heist_K2Node_ComponentBoundEvent_3_OnMenuButtonSelected__DelegateSignature(Button) end
+---@param Button USBZMenuButton
+function UWBP_UI_Challenges_Screen_C:BndEvt__WBP_UI_Challenges_Screen_Button_General_K2Node_ComponentBoundEvent_1_OnMenuButtonSelected__DelegateSignature(Button) end
+---@param Button USBZMenuButton
+function UWBP_UI_Challenges_Screen_C:BndEvt__WBP_UI_Challenges_Screen_Button_All_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature(Button) end
+---@param PreviousValue FName
+function UWBP_UI_Challenges_Screen_C:OnGainedStackFocused(PreviousValue) end
+function UWBP_UI_Challenges_Screen_C:OnTabBackwardPressed() end
+function UWBP_UI_Challenges_Screen_C:OnTabForwardPressed() end
+function UWBP_UI_Challenges_Screen_C:OnPagesChanged() end
+function UWBP_UI_Challenges_Screen_C:OnFilterCategoryChanged() end
+function UWBP_UI_Challenges_Screen_C:OnFilterStatusesChanged() end
+---@param Button USBZMenuButton
+---@param bIsEnabled boolean
+function UWBP_UI_Challenges_Screen_C:BndEvt__WBP_UI_Challenges_Screen_Button_All_K2Node_ComponentBoundEvent_8_OnMenuButtonStateChanged__DelegateSignature(Button, bIsEnabled) end
+---@param Button USBZMenuButton
+function UWBP_UI_Challenges_Screen_C:BndEvt__WBP_UI_Challenges_Screen_Button_All_K2Node_ComponentBoundEvent_9_OnMenuButtonSelected__DelegateSignature(Button) end
+function UWBP_UI_Challenges_Screen_C:OnSecondaryInteractionPressed() end
+function UWBP_UI_Challenges_Screen_C:BndEvt__WBP_UI_Challenges_Screen_Button_TabForward_K2Node_ComponentBoundEvent_10_OnButtonClicked__DelegateSignature() end
+function UWBP_UI_Challenges_Screen_C:BndEvt__WBP_UI_Challenges_Screen_Button_TabBackward_K2Node_ComponentBoundEvent_11_OnButtonClicked__DelegateSignature() end
+function UWBP_UI_Challenges_Screen_C:OnTabForwardReleased() end
+function UWBP_UI_Challenges_Screen_C:Delegate_NextPage() end
+function UWBP_UI_Challenges_Screen_C:OnTabBackwardReleased() end
+function UWBP_UI_Challenges_Screen_C:Delegate_PreviousPage() end
+function UWBP_UI_Challenges_Screen_C:BndEvt__WBP_UI_Challenges_Screen_TutorialPopup_Button_K2Node_ComponentBoundEvent_12_OnButtonClicked__DelegateSignature() end
+---@param EntryPoint int32
+function UWBP_UI_Challenges_Screen_C:ExecuteUbergraph_WBP_UI_Challenges_Screen(EntryPoint) end
+
+

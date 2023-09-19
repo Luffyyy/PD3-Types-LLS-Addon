@@ -1,0 +1,46 @@
+---@meta
+
+---@class UWBP_UI_SM_LoadoutCustomization_C : USBZMainMenuLoadoutCustomization
+---@field UberGraphFrame FPointerToUberGraphFrame
+---@field Transition UWidgetAnimation
+---@field CanvasPanel_LoadoutSelection UCanvasPanel
+---@field Text_LoadoutName UTextBlock
+---@field Widget_Loadout UWBP_UI_Inventory_LoadoutDisplayPanel_C
+---@field RT_ActiveButton USBZMenuButton
+---@field MainMenuMannequin ACH_UI_MM_PlayerCharacter_C
+UWBP_UI_SM_LoadoutCustomization_C = {}
+
+---@param InEquippableSlot ESBZEquippableLoadoutSlot
+---@param Equippable_Config FSBZEquippableConfig
+function UWBP_UI_SM_LoadoutCustomization_C:GetWeaponConfig(InEquippableSlot, Equippable_Config) end
+---@param bIsDisabled boolean
+function UWBP_UI_SM_LoadoutCustomization_C:SetDisabledState(bIsDisabled) end
+function UWBP_UI_SM_LoadoutCustomization_C:OnAddedToStack() end
+function UWBP_UI_SM_LoadoutCustomization_C:Construct() end
+---@param EquippableSlot ESBZEquippableLoadoutSlot
+---@param ActiveWeaponIndex int32
+function UWBP_UI_SM_LoadoutCustomization_C:BndEvt__WBP_UI_SM_InventoryScreen_Widget_Loadout_K2Node_ComponentBoundEvent_0_OnWeaponButtonSelected__DelegateSignature(EquippableSlot, ActiveWeaponIndex) end
+---@param ActiveItemData USBZInventoryBaseData
+function UWBP_UI_SM_LoadoutCustomization_C:BndEvt__WBP_UI_SM_InventoryScreen_Widget_Loadout_K2Node_ComponentBoundEvent_1_OnItemButtonSelected__DelegateSignature(ActiveItemData) end
+---@param ActiveItemData USBZInventoryBaseData
+function UWBP_UI_SM_LoadoutCustomization_C:BndEvt__WBP_UI_SM_InventoryScreen_Widget_Loadout_K2Node_ComponentBoundEvent_2_OnItemButtonSelected__DelegateSignature(ActiveItemData) end
+---@param ActiveItemData USBZInventoryBaseData
+function UWBP_UI_SM_LoadoutCustomization_C:BndEvt__WBP_UI_SM_InventoryScreen_Widget_Loadout_K2Node_ComponentBoundEvent_3_OnItemButtonSelected__DelegateSignature(ActiveItemData) end
+---@param ActiveItemData USBZInventoryBaseData
+function UWBP_UI_SM_LoadoutCustomization_C:BndEvt__WBP_UI_SM_InventoryScreen_Widget_Loadout_K2Node_ComponentBoundEvent_4_OnItemButtonSelected__DelegateSignature(ActiveItemData) end
+---@param Button USBZMenuButton
+---@param bIsFocused boolean
+---@param ButtonType ESBZInventoryEquipmentType
+function UWBP_UI_SM_LoadoutCustomization_C:BndEvt__WBP_UI_SM_InventoryScreen_Widget_Loadout_K2Node_ComponentBoundEvent_3_OnButtonFocusChanged__DelegateSignature(Button, bIsFocused, ButtonType) end
+function UWBP_UI_SM_LoadoutCustomization_C:BndEvt__WBP_UI_SM_InventoryScreen_Widget_Loadout_K2Node_ComponentBoundEvent_5_SkillButtonSelected__DelegateSignature() end
+---@param PreviousValue FName
+function UWBP_UI_SM_LoadoutCustomization_C:OnGainedStackFocused(PreviousValue) end
+function UWBP_UI_SM_LoadoutCustomization_C:OnLostStackFocused() end
+---@param InActionInput FName
+function UWBP_UI_SM_LoadoutCustomization_C:OnControlsReferenceClicked(InActionInput) end
+---@param ActiveItemData USBZInventoryBaseData
+function UWBP_UI_SM_LoadoutCustomization_C:BndEvt__WBP_UI_SM_LoadoutCustomization_Widget_Loadout_K2Node_ComponentBoundEvent_9_OnItemButtonSelected__DelegateSignature(ActiveItemData) end
+---@param EntryPoint int32
+function UWBP_UI_SM_LoadoutCustomization_C:ExecuteUbergraph_WBP_UI_SM_LoadoutCustomization(EntryPoint) end
+
+

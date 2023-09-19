@@ -1,0 +1,45 @@
+---@meta
+
+---@class UWBP_UI_ActionPhaseMenu_More_C : USBZMenuStackScreenWidget
+---@field UberGraphFrame FPointerToUberGraphFrame
+---@field Button_MainMenu UWBP_UI_TextButton_C
+---@field Button_RestartHeist UWBP_UI_TextButton_C
+---@field Button_ResumeGame UWBP_UI_TextButton_C
+---@field Button_Settings UWBP_UI_TextButton_C
+---@field RT_ActiveButton USBZMenuButton
+---@field ConfirmButtonControlsReference FSBZButtonControlsReference
+UWBP_UI_ActionPhaseMenu_More_C = {}
+
+---@param Button USBZMenuButton
+---@param bIsEnabled boolean
+function UWBP_UI_ActionPhaseMenu_More_C:BndEvt__WBP_UI_ActionPhaseMenu_More_Button_ResumeGame_K2Node_ComponentBoundEvent_0_OnMenuButtonStateChanged__DelegateSignature(Button, bIsEnabled) end
+---@param Button USBZMenuButton
+function UWBP_UI_ActionPhaseMenu_More_C:BndEvt__WBP_UI_ActionPhaseMenu_More_Button_ResumeGame_K2Node_ComponentBoundEvent_1_OnMenuButtonSelected__DelegateSignature(Button) end
+---@param Button USBZMenuButton
+---@param bIsEnabled boolean
+function UWBP_UI_ActionPhaseMenu_More_C:BndEvt__WBP_UI_ActionPhaseMenu_More_Button_QuitGame_K2Node_ComponentBoundEvent_2_OnMenuButtonStateChanged__DelegateSignature(Button, bIsEnabled) end
+---@param Button USBZMenuButton
+function UWBP_UI_ActionPhaseMenu_More_C:BndEvt__WBP_UI_ActionPhaseMenu_More_Button_QuitGame_K2Node_ComponentBoundEvent_3_OnMenuButtonSelected__DelegateSignature(Button) end
+---@param PreviousValue FName
+function UWBP_UI_ActionPhaseMenu_More_C:OnGainedStackFocused(PreviousValue) end
+function UWBP_UI_ActionPhaseMenu_More_C:OnLostStackFocused() end
+---@param ActionName FName
+function UWBP_UI_ActionPhaseMenu_More_C:OnControlsReferencePressed(ActionName) end
+---@param Button USBZMenuButton
+---@param bIsEnabled boolean
+function UWBP_UI_ActionPhaseMenu_More_C:BndEvt__WBP_UI_ActionPhaseMenu_More1_Button_Settings_K2Node_ComponentBoundEvent_4_OnMenuButtonStateChanged__DelegateSignature(Button, bIsEnabled) end
+---@param Button USBZMenuButton
+function UWBP_UI_ActionPhaseMenu_More_C:BndEvt__WBP_UI_ActionPhaseMenu_More1_Button_Settings_K2Node_ComponentBoundEvent_5_OnMenuButtonSelected__DelegateSignature(Button) end
+---@param Button USBZMenuButton
+function UWBP_UI_ActionPhaseMenu_More_C:BndEvt__WBP_UI_ActionPhaseMenu_More_Button_ResumeGame_1_K2Node_ComponentBoundEvent_6_OnMenuButtonSelected__DelegateSignature(Button) end
+---@param ClosingActionName FName
+function UWBP_UI_ActionPhaseMenu_More_C:OnQuitConfirmed(ClosingActionName) end
+---@param ClosingActionName FName
+function UWBP_UI_ActionPhaseMenu_More_C:CustomEvent(ClosingActionName) end
+---@param Button USBZMenuButton
+---@param bIsEnabled boolean
+function UWBP_UI_ActionPhaseMenu_More_C:BndEvt__WBP_UI_ActionPhaseMenu_More_Button_RestartHeist_K2Node_ComponentBoundEvent_7_OnMenuButtonStateChanged__DelegateSignature(Button, bIsEnabled) end
+---@param EntryPoint int32
+function UWBP_UI_ActionPhaseMenu_More_C:ExecuteUbergraph_WBP_UI_ActionPhaseMenu_More(EntryPoint) end
+
+

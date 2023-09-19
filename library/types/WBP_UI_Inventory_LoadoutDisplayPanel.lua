@@ -1,0 +1,50 @@
+---@meta
+
+---@class UWBP_UI_Inventory_LoadoutDisplayPanel_C : USBZMainMenuLoadoutDisplayWidget
+---@field UberGraphFrame FPointerToUberGraphFrame
+---@field Button_Mask UWBP_UI_LoadoutCustomization_ItemButton_C
+---@field Button_Skills UWBP_UI_Inventory_LoadoutSkillsButton_C
+---@field OnButtonFocusChanged FWBP_UI_Inventory_LoadoutDisplayPanel_COnButtonFocusChanged
+---@field SkillButtonSelected FWBP_UI_Inventory_LoadoutDisplayPanel_CSkillButtonSelected
+---@field RT_Skills TArray<USBZSkillData>
+UWBP_UI_Inventory_LoadoutDisplayPanel_C = {}
+
+function UWBP_UI_Inventory_LoadoutDisplayPanel_C:PlayDisplayAnimation() end
+function UWBP_UI_Inventory_LoadoutDisplayPanel_C:GiveKeyboardFocus() end
+---@param Button USBZMenuButton
+---@param bIsEnabled boolean
+function UWBP_UI_Inventory_LoadoutDisplayPanel_C:BndEvt__WBP_UI_Inventory_LoadoutDisplayPanel_Button_PrimaryWeapon_K2Node_ComponentBoundEvent_0_OnMenuButtonStateChanged__DelegateSignature(Button, bIsEnabled) end
+---@param Button USBZMenuButton
+---@param bIsEnabled boolean
+function UWBP_UI_Inventory_LoadoutDisplayPanel_C:BndEvt__WBP_UI_Inventory_LoadoutDisplayPanel_Button_SecondaryWeapon_K2Node_ComponentBoundEvent_1_OnMenuButtonStateChanged__DelegateSignature(Button, bIsEnabled) end
+---@param Button USBZMenuButton
+---@param bIsEnabled boolean
+function UWBP_UI_Inventory_LoadoutDisplayPanel_C:BndEvt__WBP_UI_Inventory_LoadoutDisplayPanel_Button_Armour_K2Node_ComponentBoundEvent_3_OnMenuButtonStateChanged__DelegateSignature(Button, bIsEnabled) end
+---@param Button USBZMenuButton
+---@param bIsEnabled boolean
+function UWBP_UI_Inventory_LoadoutDisplayPanel_C:BndEvt__WBP_UI_Inventory_LoadoutDisplayPanel_Button_Throwable_K2Node_ComponentBoundEvent_4_OnMenuButtonStateChanged__DelegateSignature(Button, bIsEnabled) end
+---@param Button USBZMenuButton
+---@param bIsEnabled boolean
+function UWBP_UI_Inventory_LoadoutDisplayPanel_C:BndEvt__WBP_UI_Inventory_LoadoutDisplayPanel_Button_Tool_K2Node_ComponentBoundEvent_5_OnMenuButtonStateChanged__DelegateSignature(Button, bIsEnabled) end
+---@param Button USBZMenuButton
+---@param bIsEnabled boolean
+function UWBP_UI_Inventory_LoadoutDisplayPanel_C:BndEvt__WBP_UI_Inventory_LoadoutDisplayPanel_Button_Placeable_K2Node_ComponentBoundEvent_6_OnMenuButtonStateChanged__DelegateSignature(Button, bIsEnabled) end
+---@param Button USBZMenuButton
+---@param bIsEnabled boolean
+function UWBP_UI_Inventory_LoadoutDisplayPanel_C:BndEvt__WBP_UI_Inventory_LoadoutDisplayPanel_Button_Skills_K2Node_ComponentBoundEvent_7_OnMenuButtonStateChanged__DelegateSignature(Button, bIsEnabled) end
+---@param Button USBZMenuButton
+function UWBP_UI_Inventory_LoadoutDisplayPanel_C:BndEvt__WBP_UI_Inventory_LoadoutDisplayPanel_Button_Skills_K2Node_ComponentBoundEvent_8_OnMenuButtonSelected__DelegateSignature(Button) end
+---@param PlayerLoadoutConfig FSBZPlayerLoadoutConfig
+function UWBP_UI_Inventory_LoadoutDisplayPanel_C:OnNewConfigUpdated(PlayerLoadoutConfig) end
+---@param Button USBZMenuButton
+---@param bIsEnabled boolean
+function UWBP_UI_Inventory_LoadoutDisplayPanel_C:BndEvt__WBP_UI_Inventory_LoadoutDisplayPanel_Button_OverkillWeapon_K2Node_ComponentBoundEvent_3_OnMenuButtonStateChanged__DelegateSignature(Button, bIsEnabled) end
+---@param EntryPoint int32
+function UWBP_UI_Inventory_LoadoutDisplayPanel_C:ExecuteUbergraph_WBP_UI_Inventory_LoadoutDisplayPanel(EntryPoint) end
+function UWBP_UI_Inventory_LoadoutDisplayPanel_C:SkillButtonSelected__DelegateSignature() end
+---@param Button USBZMenuButton
+---@param bIsFocused boolean
+---@param ButtonType ESBZInventoryEquipmentType
+function UWBP_UI_Inventory_LoadoutDisplayPanel_C:OnButtonFocusChanged__DelegateSignature(Button, bIsFocused, ButtonType) end
+
+

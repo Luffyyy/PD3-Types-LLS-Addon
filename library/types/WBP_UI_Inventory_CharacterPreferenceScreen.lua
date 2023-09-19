@@ -1,0 +1,27 @@
+---@meta
+
+---@class UWBP_UI_Inventory_CharacterPreferenceScreen_C : USBZMainMenuInventoryCharacterPreferenceScreen
+---@field UberGraphFrame FPointerToUberGraphFrame
+---@field Image UImage
+---@field Image_1 UImage
+---@field Image_306 UImage
+---@field Image_tittle UImage
+---@field TutorialPopup_Button UWBP_UI_Menu_ActionInputButton_C
+---@field RT_FocusedButton USBZMenuButton
+UWBP_UI_Inventory_CharacterPreferenceScreen_C = {}
+
+---@param PreviousValue FName
+function UWBP_UI_Inventory_CharacterPreferenceScreen_C:OnGainedStackFocused(PreviousValue) end
+function UWBP_UI_Inventory_CharacterPreferenceScreen_C:OnLostStackFocused() end
+function UWBP_UI_Inventory_CharacterPreferenceScreen_C:OnInitialized() end
+function UWBP_UI_Inventory_CharacterPreferenceScreen_C:IncrementCharacterPreferenceSlot() end
+function UWBP_UI_Inventory_CharacterPreferenceScreen_C:DecrementCharacterPreferenceSlot() end
+---@param InActionInput FName
+function UWBP_UI_Inventory_CharacterPreferenceScreen_C:OnControlsReferenceClicked(InActionInput) end
+---@param SelectionAction ESBZCharacterPreferenceButtonSelectionAction
+function UWBP_UI_Inventory_CharacterPreferenceScreen_C:UpdateCharacterSlotButtonControlsReference(SelectionAction) end
+function UWBP_UI_Inventory_CharacterPreferenceScreen_C:BndEvt__WBP_UI_Inventory_CharacterPreferenceScreen_TutorialPopup_Button_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature() end
+---@param EntryPoint int32
+function UWBP_UI_Inventory_CharacterPreferenceScreen_C:ExecuteUbergraph_WBP_UI_Inventory_CharacterPreferenceScreen(EntryPoint) end
+
+

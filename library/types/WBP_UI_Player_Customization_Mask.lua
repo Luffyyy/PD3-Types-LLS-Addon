@@ -1,0 +1,39 @@
+---@meta
+
+---@class UWBP_UI_Player_Customization_Mask_C : USBZMainMenuMaskCustomization
+---@field UberGraphFrame FPointerToUberGraphFrame
+---@field ApplyButton UWBP_UI_TextButton_C
+---@field GlobalColorButton UWBP_Mask_Customization_Slot_Button_C
+---@field PatternButton UWBP_Mask_Customization_Slot_Button_C
+---@field VerticalBox UVerticalBox
+---@field VFXButton UWBP_Mask_Customization_Slot_Button_C
+UWBP_UI_Player_Customization_Mask_C = {}
+
+---@param Navigation EUINavigation
+---@return UWidget
+function UWBP_UI_Player_Customization_Mask_C:ExitApplyButtonNavigation(Navigation) end
+---@param Navigation EUINavigation
+---@return UWidget
+function UWBP_UI_Player_Customization_Mask_C:ExitVerticalListNavigation(Navigation) end
+---@param Button USBZMenuButton
+function UWBP_UI_Player_Customization_Mask_C:NonPatternButtonPressed(Button) end
+function UWBP_UI_Player_Customization_Mask_C:RevertBodyAndEquipped() end
+function UWBP_UI_Player_Customization_Mask_C:ShowMaskOnly() end
+---@param PreviousValue FName
+function UWBP_UI_Player_Customization_Mask_C:OnGainedStackFocused(PreviousValue) end
+function UWBP_UI_Player_Customization_Mask_C:OnLostStackFocused() end
+---@param ActionName FName
+function UWBP_UI_Player_Customization_Mask_C:OnControlsReferenceClicked(ActionName) end
+---@param Button USBZMenuButton
+function UWBP_UI_Player_Customization_Mask_C:BndEvt__WBP_UI_Player_Customization_Mask_PatternButton_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature(Button) end
+function UWBP_UI_Player_Customization_Mask_C:OnRemovedFromStack() end
+---@param Button USBZMenuButton
+function UWBP_UI_Player_Customization_Mask_C:BndEvt__WBP_UI_Player_Customization_Mask_WBP_UI_TextButton_K2Node_ComponentBoundEvent_1_OnMenuButtonSelected__DelegateSignature(Button) end
+---@param Button USBZMenuButton
+function UWBP_UI_Player_Customization_Mask_C:BndEvt__WBP_UI_Player_Customization_Mask_VFXButton_K2Node_ComponentBoundEvent_3_OnMenuButtonSelected__DelegateSignature(Button) end
+---@param Button USBZMenuButton
+function UWBP_UI_Player_Customization_Mask_C:BndEvt__WBP_UI_Player_Customization_Mask_GlobalColorButton_K2Node_ComponentBoundEvent_2_OnMenuButtonSelected__DelegateSignature(Button) end
+---@param EntryPoint int32
+function UWBP_UI_Player_Customization_Mask_C:ExecuteUbergraph_WBP_UI_Player_Customization_Mask(EntryPoint) end
+
+

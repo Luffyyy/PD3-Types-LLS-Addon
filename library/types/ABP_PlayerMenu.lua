@@ -1,0 +1,29 @@
+---@meta
+
+---@class UABP_PlayerMenu_C : USBZMainMenuPlayerAnimation
+---@field UberGraphFrame FPointerToUberGraphFrame
+---@field AnimGraphNode_SequencePlayer_2 FAnimNode_SequencePlayer
+---@field AnimGraphNode_TwoBoneIK_1 FAnimNode_TwoBoneIK
+---@field AnimGraphNode_TwoBoneIK FAnimNode_TwoBoneIK
+---@field AnimGraphNode_ModifyBone_1 FAnimNode_ModifyBone
+---@field AnimGraphNode_ModifyBone FAnimNode_ModifyBone
+---@field AnimGraphNode_LocalToComponentSpace FAnimNode_ConvertLocalToComponentSpace
+---@field AnimGraphNode_Root FAnimNode_Root
+---@field AnimGraphNode_LayeredBoneBlend_1 FAnimNode_LayeredBoneBlend
+---@field AnimGraphNode_LayeredBoneBlend FAnimNode_LayeredBoneBlend
+---@field AnimGraphNode_SequencePlayer_1 FAnimNode_SequencePlayer
+---@field AnimGraphNode_SequencePlayer FAnimNode_SequencePlayer
+---@field AnimGraphNode_ComponentToLocalSpace FAnimNode_ConvertComponentToLocalSpace
+---@field AnimGraphNode_Slot FAnimNode_Slot
+UABP_PlayerMenu_C = {}
+
+---@param AnimGraph FPoseLink
+function UABP_PlayerMenu_C:AnimGraph(AnimGraph) end
+function UABP_PlayerMenu_C:EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_PlayerMenu_AnimGraphNode_LayeredBoneBlend_021DE2D8451C526E96F55F86C9099E9F() end
+function UABP_PlayerMenu_C:EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_PlayerMenu_AnimGraphNode_LayeredBoneBlend_C668051B40192EEEAA35C0BB7E7E8B0C() end
+function UABP_PlayerMenu_C:EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_PlayerMenu_AnimGraphNode_ModifyBone_A8FE88E84CB3CF3C381924947064EBB1() end
+function UABP_PlayerMenu_C:EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_PlayerMenu_AnimGraphNode_ModifyBone_12E0E52C405F26D8B89282A7D21078DF() end
+---@param EntryPoint int32
+function UABP_PlayerMenu_C:ExecuteUbergraph_ABP_PlayerMenu(EntryPoint) end
+
+

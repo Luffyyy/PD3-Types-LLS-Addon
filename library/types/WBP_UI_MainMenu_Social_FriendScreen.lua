@@ -1,0 +1,118 @@
+---@meta
+
+---@class UWBP_UI_MainMenu_Social_FriendScreen_C : USBZSocialFriendButtonContainer
+---@field UberGraphFrame FPointerToUberGraphFrame
+---@field Button_HeaderBlockedPlayers UWBP_UI_CollapsePanel_Button_C
+---@field Button_HeaderIncomingFriendRequests UWBP_UI_CollapsePanel_Button_C
+---@field Button_HeaderOfflinePlayers UWBP_UI_CollapsePanel_Button_C
+---@field Button_HeaderOutgoingFriendRequests_1 UWBP_UI_CollapsePanel_Button_C
+---@field Button_HeaderParty UWBP_UI_CollapsePanel_Button_C
+---@field Button_HeaderPayday UWBP_UI_CollapsePanel_Button_C
+---@field Button_HeaderPlatform UWBP_UI_CollapsePanel_Button_C
+---@field WBP_UI_MainMenu_Social_FriendButton UWBP_UI_MainMenu_Social_FriendButton_C
+---@field Widget_SearchUser UWBP_TextEntry_Button_C
+---@field ActiveButton USBZMenuButton
+---@field CloseScreen FWBP_UI_MainMenu_Social_FriendScreen_CCloseScreen
+---@field EmptyButtonActionDisplayText TMap<FName, FText>
+---@field CanBlockPlayer boolean
+---@field CanShowFriendProfile boolean
+---@field CanInviteToParty boolean
+---@field CanJoinLobby boolean
+---@field ['Can Show Friend Profile'] boolean
+---@field CanRequestFriend boolean
+UWBP_UI_MainMenu_Social_FriendScreen_C = {}
+
+---@param IsShowing boolean
+---@param Button UWBP_UI_CollapsePanel_Button_C
+---@param Panel UPanelWidget
+function UWBP_UI_MainMenu_Social_FriendScreen_C:SetHeaderButtonShowing(IsShowing, Button, Panel) end
+---@param Button UWBP_UI_CollapsePanel_Button_C
+---@param Panel UPanelWidget
+function UWBP_UI_MainMenu_Social_FriendScreen_C:UpdateCategoryPanelState(Button, Panel) end
+function UWBP_UI_MainMenu_Social_FriendScreen_C:UpdatePartyMembers() end
+---@param Button USBZMenuButton
+---@param IsButtonFocused boolean
+function UWBP_UI_MainMenu_Social_FriendScreen_C:HandlePartyButtonFocusChange(Button, IsButtonFocused) end
+---@param ButtonActionDisplayText TMap<FName, FText>
+function UWBP_UI_MainMenu_Social_FriendScreen_C:UpdateMenuControlReference(ButtonActionDisplayText) end
+---@param Button UWBP_UI_CollapsePanel_Button_C
+---@param Panel UPanelWidget
+function UWBP_UI_MainMenu_Social_FriendScreen_C:HandleHeaderButtonSelected(Button, Panel) end
+---@param Button USBZMenuButton
+---@param IsButtonEnabled boolean
+function UWBP_UI_MainMenu_Social_FriendScreen_C:HandleHeaderButtonFocusChanged(Button, IsButtonEnabled) end
+---@param Button USBZMenuButton
+---@param IsButtonFocused boolean
+UWBP_UI_MainMenu_Social_FriendScreen_C['Handle Friend Button Focus Changed'] = function(Button, IsButtonFocused) end
+---@param Button USBZMenuButton
+---@param IsButtonEnabled boolean
+---@param ButtonActionDisplayText TMap<FName, FText>
+function UWBP_UI_MainMenu_Social_FriendScreen_C:HandleButtonFocusChanged(Button, IsButtonEnabled, ButtonActionDisplayText) end
+function UWBP_UI_MainMenu_Social_FriendScreen_C:ForceFocus() end
+---@param Text FText
+UWBP_UI_MainMenu_Social_FriendScreen_C['Event On Text Changed_FilterFriends'] = function(Text) end
+---@param Text FText
+UWBP_UI_MainMenu_Social_FriendScreen_C['Event On Text Canged_SearchUser'] = function(Text) end
+---@param Button USBZMenuButton
+function UWBP_UI_MainMenu_Social_FriendScreen_C:BndEvt__WBP_UI_MainMenu_Social_FriendContainer_Button_HeaderPayday_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature(Button) end
+---@param Button USBZMenuButton
+function UWBP_UI_MainMenu_Social_FriendScreen_C:BndEvt__WBP_UI_MainMenu_Social_FriendContainer_Button_HeaderOutgoingFriendRequests_1_K2Node_ComponentBoundEvent_1_OnMenuButtonSelected__DelegateSignature(Button) end
+---@param Button USBZMenuButton
+function UWBP_UI_MainMenu_Social_FriendScreen_C:BndEvt__WBP_UI_MainMenu_Social_FriendContainer_Button_HeaderSteam_K2Node_ComponentBoundEvent_2_OnMenuButtonSelected__DelegateSignature(Button) end
+---@param Button USBZMenuButton
+function UWBP_UI_MainMenu_Social_FriendScreen_C:BndEvt__WBP_UI_MainMenu_Social_FriendContainer_Button_HeaderIncomingFriendRequests_K2Node_ComponentBoundEvent_3_OnMenuButtonSelected__DelegateSignature(Button) end
+---@param Button USBZMenuButton
+---@param bIsEnabled boolean
+function UWBP_UI_MainMenu_Social_FriendScreen_C:BndEvt__WBP_UI_MainMenu_Social_FriendContainer_Button_HeaderSteam_K2Node_ComponentBoundEvent_4_OnMenuButtonStateChanged__DelegateSignature(Button, bIsEnabled) end
+---@param Button USBZMenuButton
+---@param bIsEnabled boolean
+function UWBP_UI_MainMenu_Social_FriendScreen_C:BndEvt__WBP_UI_MainMenu_Social_FriendContainer_Button_HeaderPayday_K2Node_ComponentBoundEvent_5_OnMenuButtonStateChanged__DelegateSignature(Button, bIsEnabled) end
+---@param Button USBZMenuButton
+---@param bIsEnabled boolean
+function UWBP_UI_MainMenu_Social_FriendScreen_C:BndEvt__WBP_UI_MainMenu_Social_FriendContainer_Button_HeaderIncomingFriendRequests_K2Node_ComponentBoundEvent_6_OnMenuButtonStateChanged__DelegateSignature(Button, bIsEnabled) end
+---@param Button USBZMenuButton
+---@param bIsEnabled boolean
+function UWBP_UI_MainMenu_Social_FriendScreen_C:BndEvt__WBP_UI_MainMenu_Social_FriendContainer_Button_HeaderOutgoingFriendRequests_1_K2Node_ComponentBoundEvent_7_OnMenuButtonStateChanged__DelegateSignature(Button, bIsEnabled) end
+---@param MenuButton USBZMenuButton
+---@param bIsFocused boolean
+function UWBP_UI_MainMenu_Social_FriendScreen_C:OnFriendButtonFocused(MenuButton, bIsFocused) end
+---@param PreviousValue FName
+function UWBP_UI_MainMenu_Social_FriendScreen_C:OnGainedStackFocused(PreviousValue) end
+---@param Button USBZMenuButton
+---@param bIsEnabled boolean
+function UWBP_UI_MainMenu_Social_FriendScreen_C:BndEvt__WBP_UI_MainMenu_Social_FriendContainer_Button_FilterFriends_K2Node_ComponentBoundEvent_8_OnMenuButtonStateChanged__DelegateSignature(Button, bIsEnabled) end
+---@param Button USBZMenuButton
+---@param bIsEnabled boolean
+function UWBP_UI_MainMenu_Social_FriendScreen_C:BndEvt__WBP_UI_MainMenu_Social_FriendContainer_Widget_SearchUser_K2Node_ComponentBoundEvent_9_OnMenuButtonStateChanged__DelegateSignature(Button, bIsEnabled) end
+function UWBP_UI_MainMenu_Social_FriendScreen_C:OnInitialized() end
+function UWBP_UI_MainMenu_Social_FriendScreen_C:OnLostStackFocused() end
+---@param ActionName FName
+function UWBP_UI_MainMenu_Social_FriendScreen_C:OnControlsReferncePressed(ActionName) end
+function UWBP_UI_MainMenu_Social_FriendScreen_C:OnAddedToStack() end
+function UWBP_UI_MainMenu_Social_FriendScreen_C:OnRemovedFromStack() end
+function UWBP_UI_MainMenu_Social_FriendScreen_C:OnPartyPanelRefreshComplete() end
+function UWBP_UI_MainMenu_Social_FriendScreen_C:OnControlsReferencePressed() end
+---@param Button USBZMenuButton
+---@param bIsEnabled boolean
+function UWBP_UI_MainMenu_Social_FriendScreen_C:BndEvt__WBP_UI_MainMenu_Social_FriendScreen_Button_HeaderBlockedPlayers_K2Node_ComponentBoundEvent_11_OnMenuButtonStateChanged__DelegateSignature(Button, bIsEnabled) end
+---@param Button USBZMenuButton
+function UWBP_UI_MainMenu_Social_FriendScreen_C:BndEvt__WBP_UI_MainMenu_Social_FriendScreen_Button_HeaderBlockedPlayers_K2Node_ComponentBoundEvent_12_OnMenuButtonSelected__DelegateSignature(Button) end
+---@param Button USBZMenuButton
+---@param bIsEnabled boolean
+function UWBP_UI_MainMenu_Social_FriendScreen_C:BndEvt__WBP_UI_MainMenu_Social_FriendScreen_Button_HeaderOfflinePlayers_K2Node_ComponentBoundEvent_13_OnMenuButtonStateChanged__DelegateSignature(Button, bIsEnabled) end
+---@param Button USBZMenuButton
+function UWBP_UI_MainMenu_Social_FriendScreen_C:BndEvt__WBP_UI_MainMenu_Social_FriendScreen_Button_HeaderOfflinePlayers_K2Node_ComponentBoundEvent_14_OnMenuButtonSelected__DelegateSignature(Button) end
+---@param MenuButton USBZMenuButton
+---@param bIsFocused boolean
+function UWBP_UI_MainMenu_Social_FriendScreen_C:OnPartyButtonFocused(MenuButton, bIsFocused) end
+---@param Button USBZMenuButton
+function UWBP_UI_MainMenu_Social_FriendScreen_C:BndEvt__WBP_UI_MainMenu_Social_FriendScreen_WBP_UI_TextButton_02_K2Node_ComponentBoundEvent_17_OnMenuButtonSelected__DelegateSignature(Button) end
+---@param Button USBZMenuButton
+---@param bIsEnabled boolean
+function UWBP_UI_MainMenu_Social_FriendScreen_C:BndEvt__WBP_UI_MainMenu_Social_FriendScreen_LeaveParty_Button_K2Node_ComponentBoundEvent_18_OnMenuButtonStateChanged__DelegateSignature(Button, bIsEnabled) end
+function UWBP_UI_MainMenu_Social_FriendScreen_C:OnFriendButtonsUpdated() end
+---@param EntryPoint int32
+function UWBP_UI_MainMenu_Social_FriendScreen_C:ExecuteUbergraph_WBP_UI_MainMenu_Social_FriendScreen(EntryPoint) end
+function UWBP_UI_MainMenu_Social_FriendScreen_C:CloseScreen__DelegateSignature() end
+
+

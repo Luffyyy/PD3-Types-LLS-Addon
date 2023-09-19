@@ -1,0 +1,41 @@
+---@meta
+
+---@class UWBP_UI_Inventory_SuitCustomization_C : USBZMainMenuSuitCustomization
+---@field UberGraphFrame FPointerToUberGraphFrame
+---@field Button_LowerBody_Colour UWBP_Mask_Customization_Slot_Button_C
+---@field Button_LowerBody_Material UWBP_Mask_Customization_Slot_Button_C
+---@field Button_UpperBody_Colour UWBP_Mask_Customization_Slot_Button_C
+---@field Button_UpperBody_Material UWBP_Mask_Customization_Slot_Button_C
+---@field RT_MenuButton USBZMenuButton
+UWBP_UI_Inventory_SuitCustomization_C = {}
+
+function UWBP_UI_Inventory_SuitCustomization_C:RefreshVisuals() end
+---@param PreviousValue FName
+function UWBP_UI_Inventory_SuitCustomization_C:OnGainedStackFocused(PreviousValue) end
+function UWBP_UI_Inventory_SuitCustomization_C:OnLostStackFocused() end
+---@param Button USBZMenuButton
+function UWBP_UI_Inventory_SuitCustomization_C:BndEvt__WBP_UI_Inventory_SuitCustomization_Button_UpperBody_Material_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature(Button) end
+---@param Button USBZMenuButton
+function UWBP_UI_Inventory_SuitCustomization_C:BndEvt__WBP_UI_Inventory_SuitCustomization_Button_UpperBody_Colour_K2Node_ComponentBoundEvent_1_OnMenuButtonSelected__DelegateSignature(Button) end
+---@param Button USBZMenuButton
+function UWBP_UI_Inventory_SuitCustomization_C:BndEvt__WBP_UI_Inventory_SuitCustomization_Button_LowerBody_Colour_K2Node_ComponentBoundEvent_2_OnMenuButtonSelected__DelegateSignature(Button) end
+---@param Button USBZMenuButton
+function UWBP_UI_Inventory_SuitCustomization_C:BndEvt__WBP_UI_Inventory_SuitCustomization_Button_LowerBody_Material_K2Node_ComponentBoundEvent_3_OnMenuButtonSelected__DelegateSignature(Button) end
+---@param ActionName FName
+function UWBP_UI_Inventory_SuitCustomization_C:OnControlsReferenceClicked(ActionName) end
+---@param Button USBZMenuButton
+---@param bIsEnabled boolean
+function UWBP_UI_Inventory_SuitCustomization_C:BndEvt__WBP_UI_Inventory_SuitCustomization_Button_LowerBody_Colour_K2Node_ComponentBoundEvent_4_OnMenuButtonStateChanged__DelegateSignature(Button, bIsEnabled) end
+---@param Button USBZMenuButton
+---@param bIsEnabled boolean
+function UWBP_UI_Inventory_SuitCustomization_C:BndEvt__WBP_UI_Inventory_SuitCustomization_Button_LowerBody_Material_K2Node_ComponentBoundEvent_5_OnMenuButtonStateChanged__DelegateSignature(Button, bIsEnabled) end
+---@param Button USBZMenuButton
+---@param bIsEnabled boolean
+function UWBP_UI_Inventory_SuitCustomization_C:BndEvt__WBP_UI_Inventory_SuitCustomization_Button_UpperBody_Colour_K2Node_ComponentBoundEvent_6_OnMenuButtonStateChanged__DelegateSignature(Button, bIsEnabled) end
+---@param Button USBZMenuButton
+---@param bIsEnabled boolean
+function UWBP_UI_Inventory_SuitCustomization_C:BndEvt__WBP_UI_Inventory_SuitCustomization_Button_UpperBody_Material_K2Node_ComponentBoundEvent_7_OnMenuButtonStateChanged__DelegateSignature(Button, bIsEnabled) end
+---@param EntryPoint int32
+function UWBP_UI_Inventory_SuitCustomization_C:ExecuteUbergraph_WBP_UI_Inventory_SuitCustomization(EntryPoint) end
+
+

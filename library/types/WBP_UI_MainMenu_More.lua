@@ -1,0 +1,88 @@
+---@meta
+
+---@class UWBP_UI_MainMenu_More_C : USBZMenuStackWidget
+---@field UberGraphFrame FPointerToUberGraphFrame
+---@field Button_ChangeMatchmakingGroup UWBP_UI_TextButton_C
+---@field Button_EULA UWBP_UI_TextButton_C
+---@field Button_GoToSafeHouse UWBP_UI_Menu_TextButton_Progress_C
+---@field Button_HeistSelection_1 UWBP_UI_TextButton_C
+---@field Button_MenuCredits UWBP_UI_TextButton_C
+---@field Button_MenuDebugMaskCustomizerMenu UWBP_UI_TextButton_C
+---@field Button_MenuQuit UWBP_UI_TextButton_C
+---@field Button_MenuReplays UWBP_UI_TextButton_C
+---@field Button_MenuSwitchUser UWBP_UI_TextButton_C
+---@field Button_ServerBrowser UWBP_UI_TextButton_C
+---@field Button_Settings UWBP_UI_TextButton_C
+---@field Button_UnlinkNebula UWBP_UI_TextButton_C
+---@field DebugTextBlock UTextBlock
+---@field VerticalBox_ButtonList UVerticalBox
+---@field RT_ActiveButton USBZMenuButton
+---@field ConfirmButtonControlsReference FSBZButtonControlsReference
+UWBP_UI_MainMenu_More_C = {}
+
+---@param PlayerController APlayerController
+function UWBP_UI_MainMenu_More_C:OnFailure_DBD335E14ACFB3AB7374E1B1BD9BEE3E(PlayerController) end
+---@param PlayerController APlayerController
+function UWBP_UI_MainMenu_More_C:OnSuccess_DBD335E14ACFB3AB7374E1B1BD9BEE3E(PlayerController) end
+---@param PreviousValue FName
+function UWBP_UI_MainMenu_More_C:OnGainedStackFocused(PreviousValue) end
+---@param Progress float
+function UWBP_UI_MainMenu_More_C:UpdateProgressBar(Progress) end
+function UWBP_UI_MainMenu_More_C:Construct() end
+function UWBP_UI_MainMenu_More_C:Destruct() end
+function UWBP_UI_MainMenu_More_C:OnRemovedFromStack() end
+function UWBP_UI_MainMenu_More_C:OnLostStackFocused() end
+---@param Button USBZMenuButton
+function UWBP_UI_MainMenu_More_C:BndEvt__WBP_UI_MainMenu_More_Button_MenuDebugCrossHairSettings_1_K2Node_ComponentBoundEvent_7_OnMenuButtonSelected__DelegateSignature(Button) end
+---@param Button USBZMenuButton
+---@param bIsEnabled boolean
+function UWBP_UI_MainMenu_More_C:BndEvt__WBP_UI_MainMenu_More_Button_MenuReplays_K2Node_ComponentBoundEvent_8_OnMenuButtonStateChanged__DelegateSignature(Button, bIsEnabled) end
+---@param Button USBZMenuButton
+function UWBP_UI_MainMenu_More_C:BndEvt__WBP_UI_MainMenu_More_Button_MenuQuit_K2Node_ComponentBoundEvent_9_OnMenuButtonSelected__DelegateSignature(Button) end
+---@param Button USBZMenuButton
+---@param bIsEnabled boolean
+function UWBP_UI_MainMenu_More_C:BndEvt__WBP_UI_MainMenu_More_Button_MenuQuit_K2Node_ComponentBoundEvent_10_OnMenuButtonStateChanged__DelegateSignature(Button, bIsEnabled) end
+---@param Button USBZMenuButton
+function UWBP_UI_MainMenu_More_C:BndEvt__WBP_UI_MainMenu_More_Button_GoToSafeHouse_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature(Button) end
+---@param Button USBZMenuButton
+---@param bIsEnabled boolean
+function UWBP_UI_MainMenu_More_C:BndEvt__WBP_UI_MainMenu_More_Button_Settings_K2Node_ComponentBoundEvent_3_OnMenuButtonStateChanged__DelegateSignature(Button, bIsEnabled) end
+---@param Button USBZMenuButton
+function UWBP_UI_MainMenu_More_C:BndEvt__WBP_UI_MainMenu_More_Button_Settings_K2Node_ComponentBoundEvent_11_OnMenuButtonSelected__DelegateSignature(Button) end
+---@param ActionName FName
+function UWBP_UI_MainMenu_More_C:OnControlRefrencePressed(ActionName) end
+function UWBP_UI_MainMenu_More_C:OnInitialized() end
+---@param Button USBZMenuButton
+---@param bIsEnabled boolean
+function UWBP_UI_MainMenu_More_C:BndEvt__WBP_UI_MainMenu_More_Button_MenuCredits_K2Node_ComponentBoundEvent_1_OnMenuButtonStateChanged__DelegateSignature(Button, bIsEnabled) end
+---@param Button USBZMenuButton
+function UWBP_UI_MainMenu_More_C:BndEvt__WBP_UI_MainMenu_More_Button_MenuCredits_K2Node_ComponentBoundEvent_12_OnMenuButtonSelected__DelegateSignature(Button) end
+---@param Button USBZMenuButton
+---@param bIsEnabled boolean
+function UWBP_UI_MainMenu_More_C:BndEvt__WBP_UI_MainMenu_More_Button_HeistSelection_1_K2Node_ComponentBoundEvent_13_OnMenuButtonStateChanged__DelegateSignature(Button, bIsEnabled) end
+---@param Button USBZMenuButton
+function UWBP_UI_MainMenu_More_C:BndEvt__WBP_UI_MainMenu_More_Button_HeistSelection_1_K2Node_ComponentBoundEvent_14_OnMenuButtonSelected__DelegateSignature(Button) end
+---@param Button USBZMenuButton
+---@param bIsEnabled boolean
+function UWBP_UI_MainMenu_More_C:BndEvt__WBP_UI_MainMenu_More_Button_ChangeMatchmakingGroup_K2Node_ComponentBoundEvent_15_OnMenuButtonStateChanged__DelegateSignature(Button, bIsEnabled) end
+---@param Button USBZMenuButton
+function UWBP_UI_MainMenu_More_C:BndEvt__WBP_UI_MainMenu_More_Button_ChangeMatchmakingGroup_K2Node_ComponentBoundEvent_16_OnMenuButtonSelected__DelegateSignature(Button) end
+---@param Button USBZMenuButton
+---@param bIsEnabled boolean
+function UWBP_UI_MainMenu_More_C:BndEvt__WBP_UI_MainMenu_More_Button_ServerBrowser_K2Node_ComponentBoundEvent_17_OnMenuButtonStateChanged__DelegateSignature(Button, bIsEnabled) end
+---@param Button USBZMenuButton
+function UWBP_UI_MainMenu_More_C:BndEvt__WBP_UI_MainMenu_More_Button_ServerBrowser_K2Node_ComponentBoundEvent_18_OnMenuButtonSelected__DelegateSignature(Button) end
+---@param ClosingActionName FName
+function UWBP_UI_MainMenu_More_C:OnQuitConfirmed(ClosingActionName) end
+---@param Button USBZMenuButton
+function UWBP_UI_MainMenu_More_C:BndEvt__WBP_UI_MainMenu_More_Button_MenuSwitchUser_K2Node_ComponentBoundEvent_2_OnMenuButtonSelected__DelegateSignature(Button) end
+---@param ActionName FName
+function UWBP_UI_MainMenu_More_C:CustomEvent(ActionName) end
+---@param Button USBZMenuButton
+function UWBP_UI_MainMenu_More_C:BndEvt__WBP_UI_MainMenu_More_Button_EULA_K2Node_ComponentBoundEvent_4_OnMenuButtonSelected__DelegateSignature(Button) end
+---@param Button USBZMenuButton
+function UWBP_UI_MainMenu_More_C:BndEvt__WBP_UI_MainMenu_More_Button_UnlinkNebula_K2Node_ComponentBoundEvent_5_OnMenuButtonSelected__DelegateSignature(Button) end
+---@param EntryPoint int32
+function UWBP_UI_MainMenu_More_C:ExecuteUbergraph_WBP_UI_MainMenu_More(EntryPoint) end
+
+

@@ -1,0 +1,45 @@
+---@meta
+
+---@class UWBP_Settings_KeyboardBindingButton_C : USBZSettingsButtonKeyboardBinding
+---@field UberGraphFrame FPointerToUberGraphFrame
+---@field Border_Image UImage
+---@field Image_Background UImage
+---@field InputKeySelector_PrimaryKey UInputKeySelector
+---@field InputKeySelector_SecondaryKey UInputKeySelector
+---@field SBZInputKeySelector_PrimaryKey UWBP_SBZInputKeySelector_C
+---@field SBZInputKeySelector_SecondaryKey UWBP_SBZInputKeySelector_C
+---@field Text_SettingName UTextBlock
+UWBP_Settings_KeyboardBindingButton_C = {}
+
+function UWBP_Settings_KeyboardBindingButton_C:UpdateSettingNameText() end
+function UWBP_Settings_KeyboardBindingButton_C:InitializeVisuals() end
+---@param bIsDisabled boolean
+function UWBP_Settings_KeyboardBindingButton_C:OnDisabledVisuals(bIsDisabled) end
+---@param bIsFocused boolean
+function UWBP_Settings_KeyboardBindingButton_C:OnFocusedVisuals(bIsFocused) end
+---@param bIsHovered boolean
+function UWBP_Settings_KeyboardBindingButton_C:OnHoverVisuals(bIsHovered) end
+function UWBP_Settings_KeyboardBindingButton_C:RefreshVisuals() end
+---@param IsDesignTime boolean
+function UWBP_Settings_KeyboardBindingButton_C:PreConstruct(IsDesignTime) end
+function UWBP_Settings_KeyboardBindingButton_C:OnInitialized() end
+---@param bInIsDisabled boolean
+function UWBP_Settings_KeyboardBindingButton_C:ButtonDisabledChanged(bInIsDisabled) end
+---@param bInHasFocus boolean
+function UWBP_Settings_KeyboardBindingButton_C:ButtonFocusedChanged(bInHasFocus) end
+---@param bInIsHovered boolean
+function UWBP_Settings_KeyboardBindingButton_C:ButtonHoveredChanged(bInIsHovered) end
+function UWBP_Settings_KeyboardBindingButton_C:SelectionNameChanged() end
+function UWBP_Settings_KeyboardBindingButton_C:SettingChanged() end
+---@param SelectedKey FInputChord
+function UWBP_Settings_KeyboardBindingButton_C:BndEvt__WBP_Settings_KeyboardBindingButton_InputKeySelector_SecondaryKey_K2Node_ComponentBoundEvent_2_OnKeySelected__DelegateSignature(SelectedKey) end
+---@param SelectedKey FInputChord
+function UWBP_Settings_KeyboardBindingButton_C:BndEvt__WBP_Settings_KeyboardBindingButton_InputKeySelector_PrimaryKey_K2Node_ComponentBoundEvent_3_OnKeySelected__DelegateSignature(SelectedKey) end
+---@param SelectedKey FInputChord
+function UWBP_Settings_KeyboardBindingButton_C:BndEvt__WBP_Settings_KeyboardBindingButton_WBP_SBZInputKeySelector_154_K2Node_ComponentBoundEvent_0_OnKeySelected__DelegateSignature(SelectedKey) end
+---@param SelectedKey FInputChord
+function UWBP_Settings_KeyboardBindingButton_C:BndEvt__WBP_Settings_KeyboardBindingButton_SBZInputKeySelector_PrimaryKey_K2Node_ComponentBoundEvent_1_OnKeySelected__DelegateSignature(SelectedKey) end
+---@param EntryPoint int32
+function UWBP_Settings_KeyboardBindingButton_C:ExecuteUbergraph_WBP_Settings_KeyboardBindingButton(EntryPoint) end
+
+
